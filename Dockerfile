@@ -48,9 +48,15 @@ RUN /bin/bash -c "source /opt/ros/noetic/setup.bash && \
 # Source the catkin workspace
 RUN echo "source /catkin_ws/devel/setup.bash" >> ~/.bashrc
 
+RUN apt-get update && apt-get install -y \
+    ros-noetic-navigation \
+    ros-noetic-map-server \
+    ros-noetic-move-base \
+    ros-noetic-amcl \
+    && apt-get install -y --fix-broken
+
 # Set the entrypoint
 ENTRYPOINT ["/bin/bash"]
-
 
 # docker run -it --privileged --name ros-gazebo:20.04 --env="DISPLAY" --net=host
 # docker run -it --privileged --env="DISPLAY" --net=host -v /home/ekumen/Camilo_Repos/Udacity-Robotics-ND/Project-1-Build-my-world:/catkin_ws/src ros-gazebo:20.04
