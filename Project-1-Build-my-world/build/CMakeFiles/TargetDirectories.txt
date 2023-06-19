@@ -1,3 +1,0 @@
-/catkin_ws/src/build/CMakeFiles/rebuild_cache.dir
-/catkin_ws/src/build/CMakeFiles/edit_cache.dir
-/catkin_ws/src/build/CMakeFiles/welcome.dir
