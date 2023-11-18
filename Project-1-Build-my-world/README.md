@@ -5,10 +5,9 @@ Create a Gazebo world which includes a custom robot model and a Plugin to print 
 
 ## Build
 In order to build this project you would need to have installed:
-    - ROS
-    - CMAKE
-    - GCC
-    - Git
+- ROS
+- CMAKE
+- GCC
 
 To build the script which prints the Welcome message follow the next steps:
 
