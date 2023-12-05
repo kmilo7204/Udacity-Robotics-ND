@@ -2,13 +2,11 @@
     <!-- Get the robot model for the joint_state_publisher and the robot_state_publisher -->
     <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find diff_robot)/urdf/diff_robot.xacro'"/>
 
-
-    <!-- Spawn My Robot -->
-    <!-- <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
-            args="-urdf -param robot_description -model my_robot
-                -x $(arg x) -y $(arg y) -z $(arg z)
-                -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)"/> -->
-
+    <!-- Spawn Diff Robot -->
+    <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+        args="-urdf -param robot_description -model my_robot
+            -x $(arg x) -y $(arg y) -z $(arg z)
+            -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)"/>
 
     <!-- Publish robot joint states -->
     <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
