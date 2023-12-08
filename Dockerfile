@@ -25,7 +25,7 @@ RUN apt-get update && apt-get install -y \
     ros-noetic-desktop-full
 
 # Setup ROS environment variables
-RUN echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+RUN echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 
 # Create a catkin workspace
 RUN mkdir -p /catkin_ws/src
@@ -53,11 +53,3 @@ RUN apt-get update && apt-get install -y \
 
 # Set the entrypoint
 ENTRYPOINT ["/bin/bash"]
-
-# ros-noetic-openni2-launch \
-# ros-noetic-urg-node \
-# ros-kinetic-joy \
-# ros-kinetic-joy* \
-# ros-kinetic-yocs-* \
-# ros-kinetic-kobuki* \
-# ros-noetic-turtlebot-navigation \
