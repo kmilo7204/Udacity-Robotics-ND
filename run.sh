@@ -21,7 +21,7 @@ DOCKER_OPTIONS="--privileged --rm \
 --net=host"
 
 if [ "$BUILD_METHOD" == "catkin" ]; then
-    docker run -it --name robotics-nd -v $PROJECT_FOLDER:/catkin_ws/src/ $DOCKER_OPTIONS ros-gazebo-nvidia:20.04
+    docker run -it --name robotics-nd -v $PROJECT_FOLDER:/home/catkin_ws/src/ $DOCKER_OPTIONS ros-gazebo-nvidia:20.04
 elif [ "$BUILD_METHOD" == "cmake" ]; then
     docker run -it --name robotics-nd -v $PROJECT_FOLDER:/home/gazebo-project $DOCKER_OPTIONS ros-gazebo-nvidia:20.04
 else

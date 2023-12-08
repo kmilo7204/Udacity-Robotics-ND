@@ -12,10 +12,20 @@ Launch the container with the following usage of the provided script `run.sh`. T
 
 - Launch a project without a `catkin_ws`:
   ```
-    ./run.sh ${PATH_TO_REPO}/gazebo_workshop/Project_1-Building/ cmake ros-gazebo-nvidia:20.04
+    ./run.sh ${PATH_TO_REPO}/Project-X/ cmake ros-gazebo-nvidia:20.04
   ```
 
 - Launch a project with a `catkin_ws`:
   ```
-    ./run.sh ${PATH_TO_REPO}/gazebo_workshop/Project_2-Plugin/ catkin ros-gazebo-nvidia:20.04
+    ./run.sh ${PATH_TO_REPO}/Project-X/ catkin ros-gazebo-nvidia:20.04
   ```
+
+
+# ros-noetic-openni2-launch \
+# ros-noetic-urg-node \
+# ros-kinetic-joy \
+# ros-kinetic-joy* \
+# ros-kinetic-yocs-* \
+# ros-kinetic-kobuki* \
+# ros-noetic-turtlebot-navigation \
+
