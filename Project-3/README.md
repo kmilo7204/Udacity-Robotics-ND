@@ -14,5 +14,10 @@ source devel/setup.bash
   roslaunch diff_robot world.launch
 ```
 
-  ~/Camilo_Repos/Udacity-Robotics-ND/Project-3
-  ./run.sh ~/Camilo_Repos/Udacity-Robotics-ND/Project-3/catkin_ws/src/ catkin ros-gazebo-nvidia:20.04
+Launch AMCL
+
+Launch Teleop keyboard
+
+
+~/Camilo_Repos/Udacity-Robotics-ND/Project-3
+./run.sh ~/Camilo_Repos/Udacity-Robotics-ND/Project-3/catkin_ws/src/ catkin ros-gazebo-nvidia:20.04
