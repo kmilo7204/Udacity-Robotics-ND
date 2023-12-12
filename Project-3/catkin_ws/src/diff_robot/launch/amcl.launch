@@ -1,6 +1,6 @@
 <launch>
     <!-- Map Server to load the 2D map -->
-    <arg name="map_file" default="$(find my_robot)/maps/office.yaml" />
+    <arg name="map_file" default="$(find diff_robot)/maps/office.yaml" />
     <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 
     <!-- AMCL -->
