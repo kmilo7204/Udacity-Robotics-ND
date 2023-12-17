@@ -49,6 +49,7 @@ RUN apt-get update && apt-get install -y \
     ros-noetic-velocity-controllers \
     ros-noetic-openslam-gmapping \
     ros-noetic-depthimage-to-laserscan \
+    ros-noetic-teleop-twist-keyboard \
     && apt-get install -y --fix-broken
 
 # Set the entrypoint
