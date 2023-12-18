@@ -1,0 +1,25 @@
+<launch>
+    <!-- Map Server to load the 2D map -->
+    <arg name="map_file" default="$(find diff_robot)/maps/office.yaml" />
+    <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+    <!-- AMCL -->
+    <node name="amcl" pkg="amcl" type="amcl" output="screen">
+        <!-- AMCL Configuration -->
+        <param name="max_particles" value="1500"/>
+        <param name="min_particles" value="50"/>
+        <param name="odom_model_type" value="diff-corrected"/>
+        <param name="update_min_a" value="0.0314"/>
+        <param name="update_min_d" value="0.1"/>
+
+        <!-- Frames information -->
+        <param name="odom_frame_id" value="odom"/>
+        <param name="base_frame_id" value="robot_footprint"/>
+        <param name="global_frame_id" value="map"/>
+
+        <!-- Initial robot pose for the estimation -->
+        <param name="initial_pose_x" value="0"/>
+        <param name="initial_pose_y" value="0"/>
+        <param name="initial_pose_a" value="-1.5707"/>
+    </node>
+</launch>
