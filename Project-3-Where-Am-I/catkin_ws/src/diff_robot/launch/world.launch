@@ -32,5 +32,4 @@
 
   <!-- Launch Rviz -->
   <node name="rviz" pkg="rviz" type="rviz" respawn="false" args="-d '$(find diff_robot)/rviz/rviz_config.rviz'"/>
-  <node name="rviz" pkg="rviz" type="rviz" respawn="false"/>
 </launch>
