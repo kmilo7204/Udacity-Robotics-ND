@@ -1,4 +1,4 @@
-# Where am I
+# Map my world
 The main purpose of this project is to create a simulation with our differential robot and Monte Carlo localization, to perform localization within the Office world.
 
 In order to complete this project we need:
@@ -12,7 +12,7 @@ Please remember that you can create the map by using PNG map creator package.
 ## Container
 A container is provided as well as a batch script you can use to run it, for that use:
   ```
-    ./run.sh ~/Camilo_Repos/Udacity-Robotics-ND/Project-3/catkin_ws/src/ catkin ros-gazebo-nvidia:20.04
+    ./run.sh ~/Camilo_Repos/Udacity-Robotics-ND/Project-4/catkin_ws/src/ catkin ros-gazebo-nvidia:20.04
   ```
 
 ## Workspace
